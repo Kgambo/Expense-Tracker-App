@@ -47,7 +47,7 @@ public class mainDisplay {
 		}
 		
 		expense.displayCategoriesList();*/
-		
+		// expenses object
 		Expenses expense = new Expenses();
 		Scanner sc = new Scanner(System.in);
 		System.out.print("input to category : ");

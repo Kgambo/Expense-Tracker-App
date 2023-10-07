@@ -15,8 +15,8 @@ public class ExpensesList extends Expenses {
 	
 	
 	
-	@Override
-	public String toString() {
+	
+	public String show() {
 		return "ExpensesList [expenses=" + expenses + ", transID=" + transID + ", categories=" + categories + ", date="
 				+ date + ", amount=" + amount + ", description=" + description + "]";
 	}
@@ -34,8 +34,7 @@ public class ExpensesList extends Expenses {
 	public void displayExpense() {
 		System.out.println("List of Expense : ");
 		for (Expenses expens :expenses ) {
-			System.out.println(expens
-					);
+			System.out.println(expens);
 		}
 	}
 

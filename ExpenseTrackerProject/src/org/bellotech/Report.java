@@ -1,6 +1,7 @@
 package org.bellotech;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Report extends ExpensesList{
@@ -13,6 +14,13 @@ public class Report extends ExpensesList{
 		this.monthly =new ArrayList<>();
 	}
 
-	
+	 public void generateDailyReport(Date targetDate) {
+		 
+		 for 
+		 
+	 }
+	 public void generateMonthlyReport(Date targetDate) {
+		 
+	 }
 	
 }
