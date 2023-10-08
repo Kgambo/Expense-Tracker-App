@@ -11,25 +11,26 @@ public class mainDisplay {
 
 	public static void main(String[] args) {
 
-		/*
-		 * User and Registration
-		 * 
-		 * Scanner sc = new Scanner(System.in);
+		 // User and Registration: Bello Class
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Press 1...new user ");
 		System.out.println("Press 2...login in ");
 		int press = sc.nextInt();
 		switch (press) {
 		case 1:
-			UserRegistration check = new UserRegistration();
-			check.userReg();
+			UserRegistration userRegistration = new UserRegistration();
+			userRegistration.userReg();
+			userRegistration.loginCheck();
 			break;
 		case 2:
-			User user = new User();
+			UserRegistration user = new UserRegistration();
 			user.loginCheck();
-			break;
 		}
-		User user = new User();
-		user.loginCheck(); */
+	
+		
+		  
+			
+		
 		
 		/*Expenses
 		Expenses expense = new Expenses();
@@ -47,16 +48,14 @@ public class mainDisplay {
 		}
 		
 		expense.displayCategoriesList();*/
-		// expenses object
-		Expenses expense = new Expenses();
-		Scanner sc = new Scanner(System.in);
-		System.out.print("input to category : ");
-		String inputList = sc.nextLine();
-		expense.addCategories(inputList);
-		ExpensesList expensesList = new ExpensesList();
-		expensesList.addExpense(inputList, null, 4545, new Date());
-		expensesList.displayExpense();
-	}
-	
+		/*
+		 * // expenses object Expenses expense = new Expenses(); Scanner sc = new
+		 * Scanner(System.in); System.out.print("input to category : "); String
+		 * inputList = sc.nextLine(); expense.addCategories(inputList); ExpensesList
+		 * expensesList = new ExpensesList(); expensesList.addExpense(inputList, null,
+		 * 4545, new Date()); expensesList.displayExpense();
+		 */
+		
+}
 }
 

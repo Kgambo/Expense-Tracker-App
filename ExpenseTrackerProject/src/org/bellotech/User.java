@@ -9,7 +9,7 @@ public class User {
 	public String address;
 	public int phoneNumb;
 
-	public User() {
+	public User(String username, String password, String email) {
 
 		this.username = username;
 		this.email = email;
@@ -58,32 +58,15 @@ public class User {
 	public void setPhoneNumb(int phoneNumb) {
 		this.phoneNumb = phoneNumb;
 	}
+	
+	
 
-	public void loginCheck() {
-		char ch;
-		do {
-			
-			
-			
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Input Login Details :");
-			
-			System.out.println("Enter username");
-			String username = sc.nextLine();
-			System.out.println("Enter password");
-			String setPassword = sc.nextLine();
-		
-			if (username.equals(username) && setPassword.equals(password)) {
-				System.out.println("Welcome User");
-				break;
-			} else {
-				System.out.println("Access Denied");
-			}
-			System.out.println("Do you want to continue? " + "Y for yes/ N for no");
-
-			ch = sc.next().charAt(0);
-
-		} while (ch == 'Y' || ch == 'Y');
-
+	
+	public String showInfo() {
+		return "User [username=" + username + ", email=" + email + ", password=" + password + ", address=" + address
+				+ ", phoneNumb=" + phoneNumb + "]";
 	}
+
+
+	
 }
