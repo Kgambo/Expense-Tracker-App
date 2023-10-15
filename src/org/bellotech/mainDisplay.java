@@ -51,6 +51,7 @@ public class mainDisplay {
         
 
         System.out.println(report.generateDailyReport());
+        
     
 		
 		/*Expenses
