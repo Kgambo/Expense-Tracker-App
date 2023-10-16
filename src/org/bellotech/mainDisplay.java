@@ -51,7 +51,7 @@ public class mainDisplay {
         
 
         System.out.println(report.generateDailyReport());
-        
+        System.out.println(report.generateMonthlyReport());
     
 		
 		/*Expenses
